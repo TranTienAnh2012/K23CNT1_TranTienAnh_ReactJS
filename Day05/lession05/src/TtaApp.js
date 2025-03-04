@@ -73,6 +73,7 @@ class TtaApp extends Component {
         <hr/>
           <div>
             <h2>class components function 2</h2>
+            
             <TtafuncEven1 />
           </div>
         <hr/>
