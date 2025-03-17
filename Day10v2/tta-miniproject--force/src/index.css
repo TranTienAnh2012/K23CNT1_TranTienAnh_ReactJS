@@ -1,0 +1,146 @@
+/* Đặt lại margin và padding cho toàn bộ trang */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Thiết lập cho phần tử body */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.DSheader {
+  color: rgb(114, 105, 114);
+}
+
+/* Hiệu ứng chuyển màu động cho chế độ sáng */
+.light {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.8), rgba(227, 227, 227, 0.8), rgba(204, 204, 204, 0.8));
+  background-size: 600% 600%;
+  animation: gradientAnimation 8s ease infinite;
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Hiệu ứng chuyển màu động cho chế độ tối */
+.dark {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.8), rgba(51, 51, 51, 0.8), rgba(17, 17, 17, 0.8));
+  background-size: 600% 600%;
+  animation: gradientAnimation 8s ease infinite;
+  color: #11100f;
+  min-height: 100vh;
+}
+
+/* Định nghĩa hoạt ảnh chuyển màu */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Thiết lập cho các nút bấm */
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hiệu ứng khi hover trên nút bấm */
+button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+/* Thiết lập cho các ô input */
+input {
+  border-radius: 6px;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/* Thiết lập cho danh sách */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(249, 249, 249, 0.5); /* Nền trong suốt */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập cho các mục trong danh sách */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5); /* Đường kẻ trong suốt */
+}
+
+/* Xóa đường kẻ dưới cho mục cuối cùng */
+li:last-child {
+  border-bottom: none;
+}
+
+/* Hiệu ứng khi hover trên các mục trong danh sách */
+li:hover {
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.5); /* Hiệu ứng hover trong suốt */
+  transition: background-color 0.3s ease;
+}
+
+/* Thiết lập cho nút bấm trong danh sách */
+li button {
+  background-color: rgba(0, 123, 255, 0.8); /* Màu nút xanh trong suốt */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hiệu ứng khi hover trên nút bấm trong danh sách */
+li button:hover {
+  background-color: rgba(0, 86, 179, 0.8);
+  transform: scale(1.1);
+}
+
+/* Hiển thị màn hình loading */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(240, 240, 240, 0.8); /* Nền trong suốt */
+  color: #555;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Spinner loading */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid rgba(0, 123, 255, 0.8); /* Màu spinner trong suốt */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Hiệu ứng quay của spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
