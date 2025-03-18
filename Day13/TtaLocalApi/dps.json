@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "fullName": "Tran Tien Anh",
+            "age": 47,
+            "class": "K23CNT1"
+        },
+        {
+            "fullName": "Tran Tien Anh",
+            "age": 47,
+            "class": "K23CNT1"
+        },
+        {
+            "fullName": "Tran Tien Anh",
+            "age": 47,
+            "class": "K23CNT1"
+        }
+    ],
+    "Students": [
+        {
+            "studentId":"2310900005",
+            "studentName":"Tran Tien Anh"
+        }
+    ]
+}
