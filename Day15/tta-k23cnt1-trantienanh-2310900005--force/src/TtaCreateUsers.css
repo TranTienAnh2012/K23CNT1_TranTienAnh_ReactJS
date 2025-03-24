@@ -1,0 +1,88 @@
+/* Container chính */
+.tta-create-users {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Tiêu đề */
+  .tta-create-users h2 {
+    text-align: center;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Nhãn (label) */
+  .tta-create-users label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input field */
+  .tta-create-users input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Hiệu ứng focus */
+  .tta-create-users input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Radio button */
+  .tta-create-users input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Group radio button */
+  .tta-create-users .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Nút bấm */
+  .tta-create-users button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tta-create-users .btn-primary {
+    background: #007bff;
+    color: white;
+  }
+  
+  .tta-create-users .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  .tta-create-users .btn-secondary {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .tta-create-users .btn-secondary:hover {
+    background: #5a6268;
+  }
+  
+  /* Điều chỉnh khoảng cách nút */
+  .tta-create-users .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  

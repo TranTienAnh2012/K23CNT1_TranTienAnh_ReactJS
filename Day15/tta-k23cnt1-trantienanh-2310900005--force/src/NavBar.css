@@ -1,0 +1,66 @@
+/* Định dạng toàn bộ trang */
+.container {
+    max-width: 2000px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Thanh điều hướng */
+  .TtaNavBar {
+    width: 100%; /* Full-width */
+    background: rgba(255, 255, 255, 0.8); /* Màu trắng với độ trong suốt */
+    backdrop-filter: blur(10px); /* Hiệu ứng mờ nền */
+    border-radius: 0; /* Bỏ bo góc để full-width */
+    padding: 12px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Giữ navbar cố định trên cùng */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Đảm bảo navbar luôn nằm trên */
+  }
+  
+  /* Danh sách menu */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Mục menu */
+  .nav-item {
+    color: #333; /* Màu chữ đen */
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  /* Hiệu ứng hover */
+  .nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  
+  /* Để nội dung không bị navbar che mất */
+  .content {
+    margin-top: 80px; /* Tạo khoảng cách với navbar */
+    padding: 20px   ;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .tta-logo {
+    position: absolute;
+    left: 40px;
+    justify-content: left;
+    width: 50px;  /* Kích thước logo */
+    height: 50px; 
+    border-radius: 50%; /* Làm tròn logo */
+    object-fit: cover; /* Cắt ảnh vừa vặn */
+  }
+  

@@ -1,0 +1,74 @@
+/* Container chính */
+.tta-edit-users {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề */
+  .tta-edit-users h2 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  
+  /* Nhãn */
+  .tta-edit-users label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Input */
+  .tta-edit-users input[type="text"],
+  .tta-edit-users input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Input focus */
+  .tta-edit-users input:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(40, 167, 69, 0.5);
+  }
+  
+  /* Checkbox */
+  .tta-edit-users input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Nút */
+  .tta-edit-users .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tta-edit-users .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tta-edit-users .btn-primary {
+    background: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .tta-edit-users .btn-primary:hover {
+    background: #218838;
+  }
+  
